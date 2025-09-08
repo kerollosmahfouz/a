@@ -1,0 +1,24 @@
+/* input::-webkit-inner-spin-button {
+    appearance: none
+} */
+
+* {
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+form * {
+    font-size: xx-large;
+}
+
+input {
+    width: 80%;
+    height: 5%;
+    display: block;
+    border-style: solid;
+}
+
+button {
+    width: 20%;
+    height: 5%;
+}

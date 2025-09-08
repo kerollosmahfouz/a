@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from .models import age
+# from .models import cont
+from .forms import contform
 
 # Create your views here.
 
@@ -8,7 +9,11 @@ def h (request):
 
 def send (request):
     if request.method == 'POST':
-        age2 = request.POST.get('age')
-        age.objects.create(age = age2)
+        cont = contform(request.POST)
+        if cont.is_valid():
+            cont.save()
+        # name = request.POST.get('name')
+        # pnum = request.POST.get('pnum')
+        # cont.objects.create(age = age2)
 
     return render(request,'h.html')

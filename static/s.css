@@ -1,0 +1,7 @@
+input ::-webkit-inner-spin-button ::-webkit-outer-spin-button {
+    appearance: none
+}
+
+* {
+    background-color: black;
+}
