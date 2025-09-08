@@ -1,0 +1,8 @@
+<h1>
+    TEST
+</h1>
+<form action="send" method="post">
+    {% csrf_token %}
+    <input name="age" type="number" max="99" placeholder="INTER YOUR AGE" width="50px" height="5px">
+    <button type="submit">send</button>
+</form>
